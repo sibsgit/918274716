@@ -9,6 +9,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
+		sh `node --eval "for (var i of ['a', 'b']) { console.log(i); }"`
             }
         }
     }
